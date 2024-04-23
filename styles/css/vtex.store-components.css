@@ -5,6 +5,10 @@
   font-size: 12px;
   text-decoration: underline;
 }
+.container{
+  width: 1280px;
+
+}
 
 .infoCardContainer--info-card-home {
   max-width: 1520px;
@@ -64,8 +68,94 @@
 .skuSelectorContainer {
   margin: 1rem 0;
 }
+.shippingContainer :global(.vtex-input__label){
+  font-size: 0;
+}
+.shippingContainer :global(.vtex-input__label)::after{
+  content: "Frete e prazo:";
+  color: #393939;
+  /* font-family: Nunito; */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 
-@media only screen and (min-width: 640px) {
+.shippingContainer :global(.vtex-button__label){
+  font-size: 0;
+}
+.shippingContainer :global(.vtex-button){
+    border-radius: 8px;
+    border: 1px solid #7D6761;
+    width: 98px;
+    height: 45px;
+    flex-shrink: 0;
+    margin-top: 40px;
+    background: transparent;
+}
+.shippingContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+}
+.shippingContainer :global(.vtex-address-form__postalCode-forgottenURL){
+  display: none;
+}
+.shippingContainer :global(.vtex-input-prefix__group){
+  border-radius: 8px;
+  border: 1px solid #7D6761;
+  width: 226px;
+  margin-top: 20px;
+  height: 45px;
+}
+.shippingContainer :global(.vtex-address-form__postalCode){
+  padding: 0;
+}
+.shippingContainer :global(.vtex-button__label)::after{
+  content:"Buscar";
+  color: #929292;
+  text-transform: capitalize;
+  /* font-family: Nunito; */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* Css imagem produto*/
+
+.carouselGaleryThumbs :global(.vtex-store-components-3-x-productImagesThumbActive) :global(.vtex-store-components-3-x-thumbImg){
+  border-radius: 18px;
+  border: 1px solid #FF8F03 !important;
+}
+.carouselGaleryThumbs :global(.vtex-store-components-3-x-productImagesThumb) :global(.vtex-store-components-3-x-thumbImg){
+  border-radius: 18px;
+  border: 1px solid #E6E6E6;
+}
+.carouselGaleryThumbs :global(.vtex-store-components-3-x-productImagesThumb){
+  margin-left: 19px;
+}
+
+/* Logo header*/
+.logoImage--almah-header-2{
+  width: 176px;
+  height: auto;
+}
+:global(.vtex-store-components-3-x-searchBarInnerContainer--almah-header-2) :global(.vtex-input-prefix__group){
+  width: 738px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #FFF;
+}
+
+
+@media only screen and (max-width: 640px) {
+  .container{
+    width: 100%;
+  }
   .newsletter .container {
     padding: 140px;
   }
@@ -103,9 +193,12 @@
 }
 
 .productNameContainer {
-  color: #3f3f40;
-  font-weight: bold;
-  font-size: 30px;
+  color: #000;
+  /* font-family: Nunito; */
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .image {

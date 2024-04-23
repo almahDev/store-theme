@@ -1,0 +1,856 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop#header-HeaderDesktop-1",
+      "header-layout.mobile#header-HeaderMobile-1"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop#header-HeaderDesktop-1",
+      "header-layout.mobile#header-HeaderMobile-1"
+    ]
+  },
+  "search-bar#header-SearchBar-1": {
+    "props": {
+      "attemptPageTypeSearch": false,
+      "autocompleteAlignment": "left",
+      "autocompleteFullWidth": false,
+      "blurOnSubmit": false,
+      "displayMode": "clear-button",
+      "emptyPlaceholder": "Not found",
+      "openAutocompleteOnFocus": false,
+      "placeholder": "O que você procura?",
+      "inputType": "text",
+      "containerMode": "overlay",
+      "disableBlurAndTouchEndHandler": false,
+      "blockClass": "almah-header-2"
+    },
+    "children": []
+  },
+
+  "flex-layout.col#header-FlexLayoutCol-1": {
+    "props": {
+      "width": "60%",
+      "blockClass": "almah-header-2-col-1"
+    },
+    "children": [
+      "search-bar#header-SearchBar-1"
+    ]
+  },
+  "logo#header-Logo-1": {
+    "props": {
+      "width": "300px",
+      "url": "https://westproj--westfarm.myvtex.com/arquivos/logo-west-sv.svg",
+      "href": "/",
+      "title": "Logo",
+      "showLabel": true,
+      "blockClass": "almah-header-2"
+    }
+  },
+  "flex-layout.col#header-FlexLayoutCol-2": {
+    "props": {
+      "width": "20%",
+      "blockClass": "almah-header-2-col-2"
+    },
+    "children": [
+      "logo#header-Logo-1"
+    ]
+  },
+  "login#header-Login-1": {
+    "props": {
+      "optionsTitle": "Escolha uma opção para entrar",
+      "emailAndPasswordTitle": "Entrar com e-mail e senha",
+      "accessCodeTitle": "Receber código de acesso por e-mail",
+      "iconLabel": "Entre ou Cadastre-se",
+      "termsAndConditions": "Aceitar os termos e condições",
+      "emailPlaceholder": "Ex.: exemplo@mail.com",
+      "passwordPlaceholder": "Adicione sua senha",
+      "forgotPassword": "Esqueci minha senha",
+      "dontHaveAccount": "Não tem uma conta? Cadastre-se",
+      "blockClass": "almah-header-2"
+    },
+    "children": []
+  },
+  "rich-text#header-RichText-1": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Favoritos",
+      "blockClass": "almah-header-2-wishlist"
+    },
+    "children": []
+  },
+  "flex-layout.row#header-FlexLayoutRow-2": {
+    "props": {
+      "colSizing": "auto",
+      "width": "20%",
+      "blockClass": "almah-header-2-col-3-row-1",
+      "horizontalAlign": "between"
+    },
+    "children": [
+      "login#header-Login-1",
+      "rich-text#header-RichText-1"
+      // "minicart.v2#minicart-MinicartFixed-1"
+    ]
+  },
+  "flex-layout.col#header-FlexLayoutCol-3": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": "almah-header-2-col-3"
+    },
+    "children": [
+      "flex-layout.row#header-FlexLayoutRow-2"
+    ]
+  },
+  "flex-layout.row#header-FlexLayoutRow-1": {
+    "props": {
+      "blockClass": "almah-header-2-row-1",
+      "colSizing": "equal",
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.col#header-FlexLayoutCol-2",
+      "flex-layout.col#header-FlexLayoutCol-1",
+      "flex-layout.col#header-FlexLayoutCol-3"
+    ]
+  },
+  "menu-item#header-MenuItem-2": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "id": "menu-item-category-apparel-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/clothing/",
+        "noFollow": false,
+        "tagTitle": "Categoria 1",
+        "text": "Categoria 1",
+        "itemType": "custom"
+      }
+    },
+    "children": []
+  },
+  "menu-item#header-MenuItem-3": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "id": "menu-item-category-apparel-accessories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/accessories/",
+        "noFollow": false,
+        "tagTitle": "Categoria 2",
+        "text": "Categoria 2",
+        "itemType": "custom"
+      }
+    },
+    "children": []
+  },
+  "menu-item#header-MenuItem-4": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Categoria 3",
+        "text": "Categoria 3",
+        "itemType": "custom"
+      }
+    },
+    "children": []
+  },
+  "vtex.menu@2.x:menu#header-Menu-2": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "all-categories-submenu"
+      ]
+    },
+    "children": []
+  },
+  "vtex.menu@2.x:submenu#header-Submenu-1": {
+    "props": {},
+    "children": [
+      "vtex.menu@2.x:menu#header-Menu-2"
+    ]
+  },
+  "menu-item#header-MenuItem-1": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "id": "menu-item-category-apparel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/",
+        "noFollow": false,
+        "tagTitle": "Todas as Categorias",
+        "text": "Todas as Categorias",
+        "itemType": "custom"
+      }
+    },
+    "children": [],
+    "blocks": [
+      "vtex.menu@2.x:submenu#header-Submenu-1"
+    ]
+  },
+  "menu-item#header-MenuItem-5": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "id": "menu-item-category-home",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 10,
+        "text": "Category 10",
+        "itemType": "category"
+      }
+    },
+    "children": []
+  },
+  "menu-item#header-MenuItem-6": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "id": "menu-item-category-home",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 10,
+        "text": "Category 10",
+        "itemType": "category"
+      }
+    },
+    "children": []
+  },
+  "menu-item#header-MenuItem-7": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "id": "menu-item-category-home",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 10,
+        "text": "Category 10",
+        "itemType": "category"
+      }
+    },
+    "children": []
+  },
+  "menu-item#header-MenuItem-8": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "id": "menu-item-category-home",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 10,
+        "text": "Category 10",
+        "itemType": "category"
+      }
+    },
+    "children": []
+  },
+  "menu-item#header-MenuItem-9": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "id": "menu-item-category-home",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 10,
+        "text": "Category 10",
+        "itemType": "category"
+      }
+    },
+    "children": []
+  },
+  "menu-item#header-MenuItem-11": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "id": "menu-item-category-apparel-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/clothing/",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "text": "Clothing",
+        "itemType": "custom"
+      }
+    },
+    "children": []
+  },
+  "menu-item#header-MenuItem-12": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "id": "menu-item-category-apparel-accessories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/accessories/",
+        "noFollow": false,
+        "tagTitle": "Accessories",
+        "text": "Accessories",
+        "itemType": "custom"
+      }
+    },
+    "children": []
+  },
+  "menu-item#header-MenuItem-13": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Eyeglasses",
+        "text": "Eyeglasses",
+        "itemType": "custom"
+      }
+    },
+    "children": []
+  },
+  "vtex.menu@2.x:menu#header-Menu-3": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#header-MenuItem-11",
+      "menu-item#header-MenuItem-12",
+      "menu-item#header-MenuItem-13"
+    ]
+  },
+  // "vtex.menu@2.x:submenu#header-Submenu-2": {
+  //   "props": {},
+  //   "children": [
+  //     "vtex.menu@2.x:menu#header-Menu-3"
+  //   ]
+  // },
+  "menu-item#header-MenuItem-10": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "id": "menu-item-category-apparel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/",
+        "noFollow": false,
+        "tagTitle": "Apparel & Accessories",
+        "text": "Apparel & Accessories",
+        "itemType": "custom"
+      }
+    },
+    "children": [],
+    "blocks": []
+  },
+  "menu-item#header-MenuItem-21": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "id": "category-11",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Category",
+        "text": "Category",
+        "itemType": "custom"
+      }
+    },
+    "children": [],
+    "blocks": []
+  },
+  "vtex.menu@2.x:menu#header-Menu-1": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "orientation": "horizontal"
+    },
+    "children": [
+      "menu-item#header-MenuItem-1",
+      "menu-item#header-MenuItem-5",
+      "menu-item#header-MenuItem-6",
+      "menu-item#header-MenuItem-7",
+      "menu-item#header-MenuItem-8",
+      "menu-item#header-MenuItem-9",
+      "menu-item#header-MenuItem-21",
+      "menu-item#header-MenuItem-10"
+    ]
+  },
+  "flex-layout.row#header-FlexLayoutRow-3": {
+    "props": {
+      "blockClass": "almah-header-2-row-2",
+      "colSizing": "equal",
+      "fullWidth": false
+    },
+    "children": [
+      "vtex.menu@2.x:menu#header-Menu-1"
+    ]
+  },
+  "sticky-layout#header-StickyLayout-1": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "position": "top",
+      "verticalSpacing": 0
+    },
+    "children": [
+      "flex-layout.row#header-FlexLayoutRow-1",
+      "flex-layout.row#header-FlexLayoutRow-3"
+    ]
+  },
+  "back-to-top-button#header-BackToTopButton-1": {
+    "props": {
+      "display": "button",
+      "displayThreshold": 600
+    },
+    "children": []
+  },
+  "header-layout.desktop#header-HeaderDesktop-1": {
+    "title": "almah | Header Desktop",
+    "props": {
+      "blockClass": "almah-header-2"
+    },
+    "children": [
+      "sticky-layout#header-StickyLayout-1",
+      "back-to-top-button#header-BackToTopButton-1"
+    ]
+  },
+  "rich-text#header-RichText-2": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "**Favoritos**",
+      "blockClass": "almah-header-2-mobile__favoritos-text"
+    },
+    "children": []
+  },
+  "flex-layout.col#header-FlexLayoutCol-4": {
+    "props": {
+      "blockClass": "almah-header-2-mobile__favoritos",
+      "fullWidth": true
+    },
+    "children": [
+      "rich-text#header-RichText-2"
+    ]
+  },
+  "login#header-Login-2": {
+    "props": {
+      "optionsTitle": "Escolha uma opção para entrar",
+      "emailAndPasswordTitle": "Entrar com e-mail e senha",
+      "accessCodeTitle": "Receber código de acesso por e-mail",
+      "iconLabel": "Entre ou Cadastre-se",
+      "termsAndConditions": "Aceitar os termos e condições",
+      "emailPlaceholder": "Ex.: exemplo@mail.com",
+      "passwordPlaceholder": "Adicione sua senha",
+      "forgotPassword": "Esqueci minha senha",
+      "dontHaveAccount": "Não tem uma conta? Cadastre-se",
+      "blockClass": "almah-header-2-mobile__login-text",
+      "accountOptionsButtonBehavior": "link"
+    },
+    "children": []
+  },
+  "flex-layout.col#header-FlexLayoutCol-5": {
+    "props": {
+      "blockClass": "almah-header-2-mobile__login",
+      "fullWidth": true
+    },
+    "children": [
+      "login#header-Login-2"
+    ]
+  },
+  "flex-layout.row#header-FlexLayoutRow-5": {
+    "props": {
+      "blockClass": "almah-header-2-mobile__login-container",
+      "colSizing": "auto",
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "flex-layout.col#header-FlexLayoutCol-5",
+      "flex-layout.col#header-FlexLayoutCol-4"
+    ]
+  },
+  "search-bar#header-SearchBar-2": {
+    "props": {
+      "blockClass": "almah-header-2",
+      "attemptPageTypeSearch": false,
+      "autocompleteAlignment": "left",
+      "autocompleteFullWidth": false,
+      "blurOnSubmit": false,
+      "displayMode": "clear-button",
+      "emptyPlaceholder": "Not found",
+      "openAutocompleteOnFocus": false,
+      "placeholder": "Para seu pet ou sua casa, procure aqui",
+      "inputType": "text",
+      "containerMode": "overlay",
+      "disableBlurAndTouchEndHandler": false
+    }
+  },
+  "flex-layout.col#header-FlexLayoutCol-6": {
+    "props": {
+      "blockClass": "almah-header-2-col-1",
+      "fullWidth": true
+    },
+    "children": [
+      "search-bar#header-SearchBar-2"
+    ]
+  },
+  "flex-layout.row#header-FlexLayoutRow-6": {
+    "props": {
+      "blockClass": "almah-header-2-mobile__search-container",
+      // "colSizing": "auto",
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "flex-layout.col#header-FlexLayoutCol-6"
+    ]
+  },
+  "menu-item#header-MenuItem-14": {
+    "props": {
+      "blockClass": "almah-header-2-mobile",
+      "id": "menu-item-category-apparel",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/",
+        "noFollow": false,
+        "tagTitle": "Todas as Categorias",
+        "text": "Todas as Categorias"
+      }
+    },
+
+    "blocks": []
+  },
+  "menu-item#header-MenuItem-15": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 10,
+        "text": "Category 10",
+        "itemType": "category"
+      },
+      "blockClass": "almah-header-2-mobile"
+    },
+    "children": []
+  },
+  "menu-item#header-MenuItem-16": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 10,
+        "text": "Category 10",
+        "itemType": "category"
+      },
+      "blockClass": "almah-header-2-mobile"
+    },
+    "children": []
+  },
+  "menu-item#header-MenuItem-17": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 10,
+        "text": "Category 10",
+        "itemType": "category"
+      },
+      "blockClass": "almah-header-2-mobile"
+    },
+    "children": []
+  },
+  "menu-item#header-MenuItem-18": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 10,
+        "text": "Category 10",
+        "itemType": "category"
+      },
+      "blockClass": "almah-header-2-mobile"
+    },
+    "children": []
+  },
+  "menu-item#header-MenuItem-19": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 10,
+        "text": "Category 10",
+        "itemType": "category"
+      },
+      "blockClass": "almah-header-2-mobile"
+    },
+    "children": []
+  },
+  "menu-item#header-MenuItem-20": {
+    "props": {
+      "id": "menu-item-category-apparel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/",
+        "noFollow": false,
+        "tagTitle": "Apparel & Accessories",
+        "text": "Apparel & Accessories",
+        "itemType": "custom"
+      },
+      "blockClass": "almah-header-2-mobile"
+    },
+    "children": [],
+    "blocks": []
+  },
+  "vtex.menu@2.x:menu#header-Menu-4": {
+    "props": {
+      "blockClass": "almah-header-2-mobile",
+      "orientation": "horizontal"
+    },
+    "children": [
+      "menu-item#header-MenuItem-14",
+      "menu-item#header-MenuItem-15",
+      "menu-item#header-MenuItem-16",
+      "menu-item#header-MenuItem-17",
+      "menu-item#header-MenuItem-18",
+      "menu-item#header-MenuItem-19",
+      "menu-item#header-MenuItem-20"
+    ]
+  },
+  "rich-text#header-RichText-3": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "[**Ajuda e suporte?**](https://google.com)",
+      "blockClass": "almah-header-2-mobile__link"
+    },
+    "children": []
+  },
+  "rich-text#header-RichText-4": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "[**Fale com a gente por WhatsApp**](https://google.com)",
+      "blockClass": "almah-header-2-mobile__link"
+    },
+    "children": []
+  },
+  "rich-text#header-RichText-5": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "[**Envie seu contato para a gente**](https://google.com)",
+      "blockClass": "almah-header-2-mobile__link"
+    },
+    "children": []
+  },
+  "rich-text#header-RichText-6": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Atendimento: de Segunda a Sexta-feira das 09:00 às 18:00 e Sábado das 08:00 às 13:00",
+      "blockClass": "almah-header-2-mobile__link"
+    },
+    "children": []
+  },
+  "flex-layout.col#header-FlexLayoutCol-7": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": "almah-header-2-mobile__links-container"
+    },
+    "children": [
+      "rich-text#header-RichText-3",
+      "rich-text#header-RichText-4",
+      "rich-text#header-RichText-5",
+      "rich-text#header-RichText-6"
+    ]
+  },
+  "flex-layout.row#header-FlexLayoutRow-7": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "almah-header-2-mobile__links-container",
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "right"
+    },
+    "children": [
+      "flex-layout.col#header-FlexLayoutCol-7"
+    ]
+  },
+  "drawer-close-button#header-DrawerCloseButton-1": {
+    "props": {},
+    "children": []
+  },
+  "drawer-header#header-DrawerHeader-1": {
+    "props": {
+      "blockClass": "almah-header-2-mobile"
+    },
+    "children": [
+      "drawer-close-button#header-DrawerCloseButton-1"
+    ]
+  },
+  "drawer#header-Drawer-1": {
+    "props": {
+      "blockClass": "almah-header-2-mobile",
+      "slideDirection": "horizontal",
+      "isFullWidth": true
+    },
+    "children": [
+      "flex-layout.row#header-FlexLayoutRow-5",
+      "flex-layout.row#header-FlexLayoutRow-6",
+      "vtex.menu@2.x:menu#header-Menu-4",
+      "flex-layout.row#header-FlexLayoutRow-7"
+    ],
+    "blocks": [
+      "drawer-header#header-DrawerHeader-1"
+    ]
+  },
+  "logo#header-Logo-2": {
+    "props": {
+      "height": "auto",
+      "mobileWidth": 0,
+      "url": "https://hefesto-upload-images.s3.amazonaws.com/1669121008397-logo-kayland-reto.png",
+      "href": "/",
+      "title": "Logo",
+      "showLabel": true,
+      "color": "#333333",
+      "blockClass": "almah-header-2-mobile"
+    },
+    "children": []
+  },
+  "login#header-Login-3": {
+    "props": {
+      "optionsTitle": "Escolha uma opção para entrar",
+      "emailAndPasswordTitle": "Entrar com e-mail e senha",
+      "accessCodeTitle": "Receber código de acesso por e-mail",
+      "iconLabel": "Entre ou Cadastre-se",
+      "termsAndConditions": "Aceitar os termos e condições",
+      "emailPlaceholder": "Ex.: exemplo@mail.com",
+      "passwordPlaceholder": "Adicione sua senha",
+      "forgotPassword": "Esqueci minha senha",
+      "dontHaveAccount": "Não tem uma conta? Cadastre-se",
+      "blockClass": "almah-header-2-mobile"
+    },
+    "children": []
+  },
+  "rich-text#header-RichText-7": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Favoritos",
+      "blockClass": "almah-header-2-mobile"
+    },
+    "children": []
+  },
+  "flex-layout.row#header-FlexLayoutRow-8": {
+    "props": {
+      "blockClass": "almah-header-2-mobile-icons",
+      "fullWidth": false,
+      "paddingTop": {
+        "desktop": 0,
+        "tablet": 0,
+        "phone": 0
+      },
+      "paddingBottom": {
+        "desktop": 0,
+        "tablet": 0,
+        "phone": 0
+      },
+      "marginTop": {
+        "desktop": 0,
+        "tablet": 0,
+        "phone": 0
+      },
+      "marginBottom": {
+        "desktop": 0,
+        "tablet": 0,
+        "phone": 0
+      },
+      "colGap": {
+        "desktop": 0,
+        "tablet": 0,
+        "phone": 0
+      },
+      "borderWidth": 0,
+      "colSizing": "auto",
+      "preventHorizontalStretch": false,
+      "horizontalAlign": "right",
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "login#header-Login-3",
+      "rich-text#header-RichText-7"
+    ]
+  },
+  "flex-layout.row#header-FlexLayoutRow-4": {
+    "props": {
+      "colSizing": "equal",
+      "blockClass": "almah-header-2-mobile",
+      "fullWidth": true
+    },
+    "children": [
+      "drawer#header-Drawer-1",
+      "logo#header-Logo-2",
+      "flex-layout.row#header-FlexLayoutRow-8"
+    ]
+  },
+  "sticky-layout#header-StickyLayout-2": {
+    "props": {
+      "blockClass": "sticky-header-mobile-2",
+      "position": "top",
+      "verticalSpacing": 0
+    },
+    "children": [
+      "flex-layout.row#header-FlexLayoutRow-4"
+    ]
+  },
+  "header-layout.mobile#header-HeaderMobile-1": {
+    "title": "almah | Header Mobile",
+    "props": {},
+    "children": [
+      "sticky-layout#header-StickyLayout-2"
+    ]
+  }
+}

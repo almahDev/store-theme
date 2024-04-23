@@ -2,7 +2,59 @@
 .flexRowContent--main-header {
   padding: 0 0.5rem;
 }
+.flexRowContent--add-to-cart :global(.vtex-button) {
+  border-radius: 10px;
+  background: #FF8F03;
+  border: 0;
+  width: 351px;
+  height: 51px;
+  color: #FFF;
+  /* font-family: Nunito; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  flex-shrink: 0;
+  text-transform: math-auto;
+}
+.flexCol--frete-simulator{
+  margin-top: 26px;
+  border-radius: 15px;
+  border: 1px solid #E6E6E6;
+  padding: 19px;
+}
 
+:global(.vtex-breadcrumb-1-x-link){
+  color: #FF8F03;
+    /* font-family: Nunito; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+:global(.vtex-breadcrumb-1-x-term){
+  color: #FF8F03;
+  /* font-family: Nunito; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+:global(.vtex-product-quantity-1-x-quantitySelectorTitle){
+  display: none;
+}
+.flexRowContent--almah-header-2-row-1{
+  align-items: center;
+}
+:global(.vtex-login-2-x-container) :global(.vtex-login-2-x-label){
+  color: #FFF;
+  /* font-family: Nunito; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
 @media screen and (min-width: 40em) {
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
@@ -16,7 +68,49 @@
     padding: 0 0.25rem;
   }
 }
+:global(.vtex-numeric-stepper__plus-button-container) :global(.vtex-numeric-stepper__plus-button){
+  border: 0;
+}
+:global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__plus-button__text){
+  color: #126449;
+  /* font-family: Nunito; */
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 
+}
+:global(.vtex-numeric-stepper__minus-button-container) :global(.vtex-numeric-stepper__minus-button){
+  border: 0;
+  background: none;
+}
+.flexCol--bloco-infos{
+  border-radius: 15px;
+  border: 1px solid #E6E6E6;
+  padding: 19px;
+}
+:global(.vtex-numeric-stepper__minus-button-container) :global(.vtex-numeric-stepper__minus-button__text){
+  color: #126449;
+  /* font-family: Nunito; */
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0px;
+}
+:global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__input){
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  border: 1px solid #E6E6E6;
+
+  color: #929292;
+/* font-family: Nunito; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .flexRowContent--menu-link {
   background-color: #03044e;
   color: #fff;
@@ -95,4 +189,18 @@
 
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
+}
+
+
+:global(.vtex-breadcrumb-1-x-homeIcon){
+  display: none;
+}
+:global(.vtex-breadcrumb-1-x-homeLink)::after{
+  content: "Página inicial";
+  color: #FF8F03;
+  /* font-family: Nunito; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
